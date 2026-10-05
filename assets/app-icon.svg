@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <rect width="256" height="256" rx="56" fill="#172554"/>
+  <rect x="54" y="27" width="148" height="202" rx="24" fill="#dbeafe"/>
+  <rect x="72" y="45" width="112" height="57" rx="10" fill="#0f172a"/>
+  <text x="128" y="84" fill="#67e8f9" font-family="monospace" font-size="27" font-weight="700" text-anchor="middle">1010</text>
+  <g fill="#2563eb">
+    <rect x="72" y="120" width="30" height="27" rx="7"/>
+    <rect x="113" y="120" width="30" height="27" rx="7"/>
+    <rect x="154" y="120" width="30" height="27" rx="7"/>
+    <rect x="72" y="159" width="30" height="27" rx="7"/>
+    <rect x="113" y="159" width="30" height="27" rx="7"/>
+    <rect x="154" y="159" width="30" height="27" rx="7"/>
+    <rect x="72" y="198" width="30" height="15" rx="7"/>
+    <rect x="113" y="198" width="71" height="15" rx="7"/>
+  </g>
+  <g fill="#ffffff" font-family="monospace" font-size="18" font-weight="700" text-anchor="middle">
+    <text x="87" y="140">0</text>
+    <text x="128" y="140">1</text>
+    <text x="169" y="140">0</text>
+    <text x="87" y="179">1</text>
+    <text x="128" y="179">0</text>
+    <text x="169" y="179">1</text>
+  </g>
+</svg>

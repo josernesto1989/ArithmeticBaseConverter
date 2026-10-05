@@ -17,7 +17,19 @@ set(PROJECT_SOURCES
         mainwindow.cpp
         mainwindow.h
         mainwindow.ui
+        app-icon.qrc
 )
+
+if(APPLE)
+    set_source_files_properties(assets/app-icon.icns PROPERTIES
+        MACOSX_PACKAGE_LOCATION Resources
+    )
+    list(APPEND PROJECT_SOURCES assets/app-icon.icns)
+endif()
+
+if(WIN32)
+    list(APPEND PROJECT_SOURCES app-icon.rc)
+endif()
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(ArithmeticBaseConverter
@@ -45,6 +57,12 @@ else()
 endif()
 
 target_link_libraries(ArithmeticBaseConverter PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
+
+if(APPLE)
+    set_target_properties(ArithmeticBaseConverter PROPERTIES
+        MACOSX_BUNDLE_ICON_FILE app-icon.icns
+    )
+endif()
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an
